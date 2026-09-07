@@ -4,6 +4,12 @@ export interface Client {
   logo?: string;
   /** true si el logo viene en negro: se invierte para que se vea sobre fondo oscuro */
   invert?: boolean;
+  /**
+   * Ajuste fino del tamaño, solo si hace falta. Los logos vienen con distintas
+   * proporciones y márgenes internos, así que a igual altura unos se ven más
+   * chicos que otros. 1 es el tamaño normal; 1.5 lo agranda un 50%.
+   */
+  scale?: number;
 }
 
 /**
@@ -15,12 +21,16 @@ export interface Client {
  * blanco. Si solo tienes la versión negra, agrega `invert: true`.
  */
 export const clients: Client[] = [
-  { name: "Coterránea", logo: "/clients/coterranea-logo.png" , scale: 2 }},
-  { name: "Cruz Verde", logo: "/clients/cruzverde-logo.png" },
+  { name: "Coterránea", logo: "/clients/coterranea-logo.png", scale: 1.7 },
+  { name: "Cruz Verde", logo: "/clients/cruzverde-logo.png", scale: 1.2 },
   { name: "FEMSA Salud", logo: "/clients/femsa-logo.png" },
-  { name: "DIP", logo: "/clients/dp-logo.png" },
+  { name: "DIP", logo: "/clients/dp-logo.png", scale: 1.6 },
   { name: "Langame", logo: "/clients/langame-logo.png" },
   { name: "Tao", logo: "/clients/tao-logo.png" },
+  { name: "Country Zapallar" },
+  { name: "Vivero Küyen" },
+  { name: "MKT Afiliados" },
   { name: "Palati" },
   { name: "Terramore" },
+  { name: "Fundación Espacio Mejor" },
 ];
