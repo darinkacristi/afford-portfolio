@@ -27,14 +27,17 @@ export default function ClientsMarquee() {
             aria-hidden={i >= clients.length}
           >
             {c.logo ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={c.logo}
-                alt={c.name}
-                className={`h-9 w-auto max-w-[180px] object-contain opacity-70 transition-opacity duration-300 hover:opacity-100 md:h-11 ${
-                  c.invert ? "brightness-0 invert" : ""
-                }`}
-              />
+              <span className="flex h-12 w-[180px] items-center justify-center md:h-14 md:w-[210px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={c.logo}
+                  alt={c.name}
+                  style={{ transform: `scale(${c.scale ?? 1})` }}
+                  className={`max-h-full max-w-full object-contain opacity-70 transition-opacity duration-300 hover:opacity-100 ${
+                    c.invert ? "brightness-0 invert" : ""
+                  }`}
+                />
+              </span>
             ) : (
               <span className="whitespace-nowrap font-display text-[clamp(20px,2.6vw,30px)] text-[#7E8B85] transition-colors duration-300 hover:text-hueso">
                 {c.name}
