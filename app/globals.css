@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --pad-x: clamp(20px, 5vw, 80px);
+    --sec-y: clamp(72px, 10vw, 140px);
+    --logo-mask: url("/brand/logo-mask.png");
+    --iso-mask: url("/brand/iso-mask.png");
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Este portafolio es oscuro de punta a punta: el color base va aquí,
+       no en una clase del <body>, para que ningún título quede negro sobre negro. */
+    @apply bg-tinta text-hueso font-sans antialiased;
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-normal;
+    line-height: 0.94;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 3px solid theme("colors.brote");
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* ---- Marca como máscara: se recolorea con text-* y nunca se deforma ---- */
+  .marca-logo,
+  .marca-iso {
+    background: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+  .marca-logo {
+    -webkit-mask-image: var(--logo-mask);
+    mask-image: var(--logo-mask);
+    aspect-ratio: 1000 / 211;
+  }
+  .marca-iso {
+    -webkit-mask-image: var(--iso-mask);
+    mask-image: var(--iso-mask);
+    aspect-ratio: 560 / 439;
+  }
+
+  /* ---- Firma tipográfica del manual: segunda línea en contorno ---- */
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px theme("colors.tinta");
+    paint-order: stroke fill;
+  }
+  .dark-block .outline {
+    -webkit-text-stroke-color: theme("colors.hueso");
+  }
+  @supports not (-webkit-text-stroke: 1px red) {
+    .outline {
+      color: theme("colors.verde");
+    }
+  }
+
+  .seccion {
+    padding: var(--sec-y) var(--pad-x);
+    position: relative;
+  }
+
+  .wrap {
+    max-width: theme("maxWidth.wrap");
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    @apply text-verde font-semibold uppercase;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    margin-bottom: 18px;
+  }
+  .dark-block .eyebrow {
+    @apply text-brote;
+  }
+
+  .lead {
+    font-size: clamp(16px, 1.6vw, 19px);
+    color: #3c3c3c;
+    max-width: 56ch;
+  }
+  .dark-block .lead {
+    color: #b9c4be;
+  }
+
+  /* ---- Transiciones degradadas entre bloques (pg. 14–15 del manual) ---- */
+  .fade-a-oscuro {
+    height: 120px;
+    background: linear-gradient(
+      180deg,
+      theme("colors.hueso") 0%,
+      theme("colors.brote") 45%,
+      theme("colors.verde") 70%,
+      theme("colors.tinta") 100%
+    );
+  }
+  .fade-a-claro {
+    height: 120px;
+    background: linear-gradient(
+      180deg,
+      theme("colors.tinta") 0%,
+      theme("colors.bosque") 40%,
+      theme("colors.verde") 65%,
+      theme("colors.hueso") 100%
+    );
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2.5 font-semibold rounded-full transition-all duration-200;
+    font-size: 15px;
+    padding: 13px 24px;
+    background: theme("colors.verde");
+    color: #fff;
+    border: 1.5px solid theme("colors.verde");
+  }
+  .btn:hover {
+    background: theme("colors.brote");
+    border-color: theme("colors.brote");
+    color: theme("colors.bosque");
+    transform: translateY(-2px);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: theme("colors.hueso");
+    border-color: rgba(237, 237, 237, 0.35);
+  }
+  .btn-ghost:hover {
+    background: theme("colors.hueso");
+    color: theme("colors.tinta");
+    border-color: theme("colors.hueso");
+  }
+  .btn-sm {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
