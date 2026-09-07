@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: "Afford",
-  tagline: "Portafolio audiovisual",
+  tagline: "Portafolio",
   // Dominio actual. Cámbialo cuando tengas el subdominio propio:
   // de acá salen el sitemap y la previsualización al compartir el link.
   url: "https://afford-portfolio.vercel.app",
   description:
-    "Video vertical, spots y fotografía producidos por Afford para sus clientes en Chile.",
+    "Video, fotografía, piezas gráficas y sitios web producidos por Afford para sus clientes en Chile.",
   city: "Viña del Mar, Chile",
 
   email: "affordcreatives@gmail.com",

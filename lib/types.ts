@@ -1,11 +1,12 @@
 /** Filtro principal de la grilla. Si agregas uno, súmalo también a `categoryLabels`. */
-export type Category = "reel" | "spot" | "foto" | "grafica";
+export type Category = "reel" | "spot" | "foto" | "grafica" | "web";
 
 export const categoryLabels: Record<Category, string> = {
   reel: "Video vertical",
   spot: "Spot / Anuncio",
   foto: "Fotografía",
   grafica: "Gráfica",
+  web: "Sitio web",
 };
 
 /**
@@ -49,6 +50,8 @@ export interface Project {
   preview?: string;
   /** Galería de la ficha, para fotografía o making of */
   images?: string[];
+  /** Para proyectos web: dirección del sitio publicado */
+  liveUrl?: string;
   /** Aparece en la portada */
   featured?: boolean;
 }
