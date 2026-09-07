@@ -37,21 +37,21 @@ export default function Home() {
 
         <div className="wrap relative z-10 w-full">
           <Reveal>
-            <p className="eyebrow">Portafolio audiovisual · {siteConfig.city}</p>
+            <p className="eyebrow">Portafolio · {siteConfig.city}</p>
           </Reveal>
 
           <Reveal delay={0.06}>
             <h1 className="max-w-[16ch]" style={{ fontSize: "clamp(44px,8vw,100px)" }}>
               Esto es lo que
               <br />
-              <span className="outline">grabamos, editamos y pautamos.</span>
+              <span className="outline">grabamos, diseñamos y publicamos.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={0.12}>
             <p className="lead mb-9 mt-6">
-              Video vertical, spots y fotografía producidos por el equipo de Afford para marcas de
-              rubro inmobiliario, salud y retail.
+              Video, fotografía, piezas gráficas y sitios web producidos por el equipo de Afford
+              para marcas de rubro inmobiliario, salud, gastronomía y retail.
             </p>
           </Reveal>
 
