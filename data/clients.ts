@@ -15,12 +15,14 @@ export interface Client {
  * blanco. Si solo tienes la versión negra, agrega `invert: true`.
  */
 export const clients: Client[] = [
-  { name: "Coterránea" },
+  { name: "Coterránea", logo: "/clients/coterranea-logo.png" },
+  { name: "Cruz Verde", logo: "/clients/cruzverde-logo.png" },
+  { name: "FEMSA Salud", logo: "/clients/femsa-logo.png" },
+  { name: "DIP", logo: "/clients/dp-logo.png" },
+  { name: "Langame", logo: "/clients/langame-logo.png" },
+  { name: "Tao", logo: "/clients/tao-logo.png" },
   { name: "Country Zapallar" },
-  { name: "FEMSA Salud" },
   { name: "Vivero Küyen" },
-  { name: "Langame" },
-  { name: "DIP" },
   { name: "MKT Afiliados" },
   { name: "Palati" },
   { name: "Terramore" },
