@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Trabajo",
-  description: "Catálogo completo de piezas audiovisuales producidas por Afford.",
+  description: "Catálogo completo de piezas producidas por Afford: video, fotografía, gráfica y sitios web.",
 };
 
 export default function TrabajoPage() {
@@ -16,7 +16,7 @@ export default function TrabajoPage() {
           eyebrow={`${projects.length} proyectos`}
           title="Todo el"
           outline="trabajo."
-          lead="Filtra por tipo de pieza. Cada proyecto abre su ficha con el video, el alcance y los créditos del equipo."
+          lead="Filtra por tipo de pieza. Cada proyecto abre su ficha con el material, el alcance y los créditos del equipo."
         />
         <WorkGrid projects={projects} />
       </div>
