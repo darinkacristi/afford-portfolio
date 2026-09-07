@@ -106,6 +106,19 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 <p className="m-0 text-[17px] text-hueso">{p.client}</p>
               </div>
 
+              {p.liveUrl && (
+                <div>
+                  <a
+                    href={p.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn w-full justify-center"
+                  >
+                    Visitar el sitio
+                  </a>
+                </div>
+              )}
+
               <div>
                 <h2 className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-brote">
                   Qué hizo Afford
