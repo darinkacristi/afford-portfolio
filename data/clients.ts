@@ -21,10 +21,6 @@ export const clients: Client[] = [
   { name: "DIP", logo: "/clients/dp-logo.png" },
   { name: "Langame", logo: "/clients/langame-logo.png" },
   { name: "Tao", logo: "/clients/tao-logo.png" },
-  { name: "Country Zapallar" },
-  { name: "Vivero Küyen" },
-  { name: "MKT Afiliados" },
   { name: "Palati" },
   { name: "Terramore" },
-  { name: "Fundación Espacio Mejor" },
 ];
