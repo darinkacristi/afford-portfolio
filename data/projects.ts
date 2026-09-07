@@ -101,6 +101,21 @@ export const projects: Project[] = [
     images: [], // ⚠️ "/work/fundacion-espacio-mejor/01.jpg", …
     featured: true,
   },
+  {
+    slug: "sitio-web-cliente", // ⚠️ cambiar por el slug real
+    title: "⚠️ Nombre del sitio",
+    client: "⚠️ Cliente",
+    year: 2026,
+    category: "web",
+    summary: "⚠️ Una línea sobre qué resuelve el sitio.",
+    description: "⚠️ Contar el encargo: qué necesitaba el cliente y cómo se resolvió.",
+    scope: ["Diseño", "Desarrollo"],
+    credits: [{ member: "darinka", role: "Diseño y desarrollo" }],
+    format: "horizontal",
+    liveUrl: "https://", // ⚠️ dirección del sitio publicado
+    images: [], // capturas: "/work/sitio-web-cliente/01.jpg", …
+    featured: true,
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
