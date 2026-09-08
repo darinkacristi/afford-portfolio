@@ -43,6 +43,7 @@ export const projects: Project[] = [
     format: "vertical",
     video: { kind: "youtube", id: "ZceEWuZDP9U" },
     featured: true,
+    cover: "/work/expovino-2026-invierno/cover.jpg",
   },
   {
     slug: "anuncios-estaticos-coterranea",
