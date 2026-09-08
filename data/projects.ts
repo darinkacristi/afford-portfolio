@@ -41,7 +41,7 @@ export const projects: Project[] = [
     scope: ["Guion", "Grabación", "Edición"],
     credits: [{ member: "baithiare", role: "Grabación y edición" }],
     format: "vertical",
-    // video: { kind: "youtube", id: "ZceEWuZDP9U" },
+    video: { kind: "youtube", id: "ZceEWuZDP9U" },
     featured: true,
   },
   {
