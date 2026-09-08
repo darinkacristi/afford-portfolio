@@ -45,9 +45,9 @@ export const projects: Project[] = [
     featured: true,
     cover: "/work/expovino-portada.jpg",
     images: [
-  "/work/fotosem-taller/01.jpg",
-  "/work/fotosem-taller/02.jpg",
-  "/work/fotosem-taller/03.jpg",
+  "/work/fotosem-taller1.jpg",
+  "/work/fotosem-taller2.jpg",
+  "/work/fotosem-taller3.jpg",
 ],
 cover: "/work/fotosem-taller/01.jpg",
   },
