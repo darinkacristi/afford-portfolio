@@ -109,7 +109,6 @@ cover: "/work/fotosem-taller/01.jpg",
     ],
     featured: true,
   },
-  },
   {
     slug: "sitio-web-cliente", // ⚠️ cambiar por el slug real
     title: "⚠️ Nombre del sitio",
