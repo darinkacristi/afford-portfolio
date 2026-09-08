@@ -158,7 +158,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.06}>
             <h2 className="mb-8" style={{ fontSize: "clamp(36px,5.6vw,72px)" }}>
-              ¿Tienes algo entre manos?
+              ¿Tienes algo que crear?
               <br />
               <span className="outline">Cuéntanos qué necesitas.</span>
             </h2>
