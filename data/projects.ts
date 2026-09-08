@@ -90,7 +90,6 @@ cover: "/work/fotosem-taller/01.jpg",
     images: [], // ⚠️ "/work/fotografia-terramore/01.jpg", …
     featured: true,
   },
-  {
       {
     slug: "fundacion-espacio-mejor",
     title: "Registro fotográfico",
