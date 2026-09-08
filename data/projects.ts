@@ -44,11 +44,7 @@ export const projects: Project[] = [
     video: { kind: "youtube", id: "ZceEWuZDP9U" },
     featured: true,
     cover: "/work/expovino-portada.jpg",
-    images: [
-  "/work/fotosem-taller1.jpg",
-  "/work/fotosem-taller2.jpg",
-  "/work/fotosem-taller3.jpg",
-],
+    
 cover: "/work/fotosem-taller/01.jpg",
   },
   {
@@ -95,18 +91,25 @@ cover: "/work/fotosem-taller/01.jpg",
     featured: true,
   },
   {
+      {
     slug: "fundacion-espacio-mejor",
-    title: "Registro fotográfico", // ⚠️ título real
+    title: "Registro fotográfico",
     client: "Fundación Espacio Mejor",
     year: 2026,
     category: "foto",
     summary: "Registro fotográfico del trabajo de la fundación.",
-    description: "⚠️ Contar qué se registró y para qué usa la fundación el material.",
+    description: "Contar qué se registró y para qué usa la fundación el material.",
     scope: ["Fotografía", "Retoque"],
     credits: [{ member: "baithiare", role: "Fotografía" }],
     format: "horizontal",
-    images: [], // ⚠️ "/work/fundacion-espacio-mejor/01.jpg", …
+    cover: "/work/fotosem-taller/01.jpg",
+    images: [
+      "/work/fotosem-taller/01.jpg",
+      "/work/fotosem-taller/02.jpg",
+      "/work/fotosem-taller/03.jpg",
+    ],
     featured: true,
+  },
   },
   {
     slug: "sitio-web-cliente", // ⚠️ cambiar por el slug real
