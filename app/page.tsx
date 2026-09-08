@@ -3,6 +3,7 @@ import Reveal from "@/components/Reveal";
 import SectionHead from "@/components/SectionHead";
 import ProjectCard from "@/components/ProjectCard";
 import ClientsMarquee from "@/components/ClientsMarquee";
+import ContactForm from "@/components/ContactForm";
 import { Iso } from "@/components/BrandMark";
 import { featuredProjects, projects } from "@/data/projects";
 import { team } from "@/data/team";
@@ -156,26 +157,32 @@ export default function Home() {
             <p className="eyebrow">Contacto</p>
           </Reveal>
           <Reveal delay={0.06}>
-            <h2 className="mb-5" style={{ fontSize: "clamp(36px,5.6vw,72px)" }}>
-              ¿Tienes algo que crear?
+            <h2 className="mb-8" style={{ fontSize: "clamp(36px,5.6vw,72px)" }}>
+              ¿Tienes algo entre manos?
               <br />
               <span className="outline">Cuéntanos qué necesitas.</span>
             </h2>
           </Reveal>
+
           <Reveal delay={0.12}>
-            <div className="mt-8 flex flex-wrap justify-center gap-3.5">
-              <a className="btn" href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer">
-                Escribir por WhatsApp
-              </a>
-              <a className="btn btn-ghost" href={`mailto:${siteConfig.email}`}>
-                Enviar un correo
-              </a>
-            </div>
+            <a className="btn" href={siteConfig.whatsapp} target="_blank" rel="noopener noreferrer">
+              Escribir por WhatsApp
+            </a>
           </Reveal>
+
           <Reveal delay={0.18}>
-            <p className="mt-10 flex items-center justify-center gap-3 text-[14px] text-[#C4D6CB]">
-              <Iso width={26} className="text-brote" />
-              {siteConfig.email}
+            <div className="mx-auto mb-6 mt-7 flex max-w-[420px] items-center gap-3.5">
+              <span className="h-px flex-1 bg-hueso/20" />
+              <span className="text-[12px] text-[#93A29A]">o déjanos tu mensaje</span>
+              <span className="h-px flex-1 bg-hueso/20" />
+            </div>
+            <ContactForm />
+          </Reveal>
+
+          <Reveal delay={0.24}>
+            <p className="mt-7 flex items-center justify-center gap-3 text-[13px] text-[#C4D6CB]">
+              <Iso width={22} className="text-brote" />
+              o directo a {siteConfig.email}
             </p>
           </Reveal>
         </div>
