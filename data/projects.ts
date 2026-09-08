@@ -98,7 +98,7 @@ export const projects: Project[] = [
     description: "Contar qué se registró y para qué usa la fundación el material.",
     scope: ["Fotografía", "Retoque"],
     credits: [{ member: "baithiare", role: "Fotografía" }],
-    format: "horizontal",
+    format: "vertical",
     cover: "/work/fotosem-taller/taller1.jpeg",
     images: [
       "/work/fotosem-taller/taller1.jpeg",
