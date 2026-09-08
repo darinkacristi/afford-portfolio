@@ -44,6 +44,12 @@ export const projects: Project[] = [
     video: { kind: "youtube", id: "ZceEWuZDP9U" },
     featured: true,
     cover: "/work/expovino-portada.jpg",
+    images: [
+  "/work/fotosem-taller/01.jpg",
+  "/work/fotosem-taller/02.jpg",
+  "/work/fotosem-taller/03.jpg",
+],
+cover: "/work/fotosem-taller/01.jpg",
   },
   {
     slug: "anuncios-estaticos-coterranea",
