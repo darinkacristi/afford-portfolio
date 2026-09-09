@@ -47,13 +47,13 @@ export const projects: Project[] = [
   },
     {
     slug: "coterranea-organico-instagram",
-    title: "Contenido orgánico",
+    title: "Rol propio e inscripción",
     client: "Coterránea",
     year: 2026,
     category: "reel",
-    summary: "Video vertical para el Instagram de la marca.",
+       summary: "Video vertical que responde una de las dudas más frecuentes del comprador.",
     description:
-      "Pieza orgánica para el Instagram de Coterránea. A diferencia de un anuncio, acá no hay que vender en tres segundos: el objetivo es que la comunidad que ya sigue la marca se quede mirando y comente.",
+      "Antes de comprar una parcela, todo el mundo pregunta lo mismo: si tiene rol propio y si está inscrita en el Conservador de Bienes Raíces. La pieza responde esa duda de frente, en formato vertical para el Instagram de Coterránea.\n\nEs el tipo de contenido que hace la mitad del trabajo comercial antes de que el lead llegue: quien ve el video llega a la conversación con la objeción ya resuelta.",
     scope: ["Guion", "Grabación", "Edición"],
     credits: [
       { member: "darinka", role: "Guion" },
