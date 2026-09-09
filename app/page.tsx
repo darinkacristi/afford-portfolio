@@ -79,7 +79,7 @@ export default function Home() {
             lead="Una muestra del trabajo reciente. El catálogo completo está en la sección Trabajo."
           />
 
-          <div className="grid gap-3.5 [grid-template-columns:repeat(auto-fill,minmax(250px,1fr))]">
+          <div className="grid gap-5 [grid-template-columns:repeat(auto-fill,minmax(260px,1fr))]">
             {featuredProjects.map((p, i) => (
               <Reveal key={p.slug} delay={(i % 3) * 0.07}>
                 <ProjectCard project={p} />
@@ -158,7 +158,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.06}>
             <h2 className="mb-8" style={{ fontSize: "clamp(36px,5.6vw,72px)" }}>
-              ¿Tienes algo que crear?
+              ¿Tienes algo entre manos?
               <br />
               <span className="outline">Cuéntanos qué necesitas.</span>
             </h2>
