@@ -60,20 +60,6 @@ export const projects: Project[] = [
     images: [], // ⚠️ rutas: "/work/anuncios-estaticos-coterranea/01.jpg", …
     featured: true,
   },
-  {
-    slug: "fotografia-palati",
-    title: "Fotografía gastronómica",
-    client: "Palati",
-    year: 2026,
-    category: "foto",
-    summary: "Fotografía de platos para carta y redes.",
-    description: "⚠️ Contar el montaje: luz, estilo de los encuadres, para qué se usaron las fotos.",
-    scope: ["Dirección de arte", "Fotografía", "Retoque"],
-    credits: [{ member: "baithiare", role: "Fotografía" }],
-    format: "cuadrado",
-    images: [], // ⚠️ "/work/fotografia-palati/01.jpg", …
-    featured: true,
-  },
     {
     slug: "fotografia-terramore",
     title: "Fotografía gastronómica",
