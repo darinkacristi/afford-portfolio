@@ -26,7 +26,7 @@ export const projects: Project[] = [
     format: "vertical",
     video: { kind: "youtube", id: "XP089SSZCP0" },
     liveUrl: "https://www.instagram.com/p/Dcy9X6SuWZn/",
-    featured: true,
+    featured: false,
     cover: "/work/hq10-portada.jpg",
   },
     {
