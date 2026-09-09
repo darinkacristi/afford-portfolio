@@ -5,6 +5,7 @@ export const team: TeamMember[] = [
   { slug: "baithiare", name: "Baithiare Vásquez", role: "Producción audiovisual" },
   { slug: "darinka", name: "Darinka Cristi", role: "Producción audiovisual" },
   { slug: "camila", name: "Camila González", role: "Diseño gráfico" },
+  { slug: "javier", name: "Javier Fort", role: "Desarrollo y estrategia" },
 ];
 
 export function memberBySlug(slug: string) {
