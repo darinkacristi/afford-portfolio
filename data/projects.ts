@@ -45,19 +45,26 @@ export const projects: Project[] = [
     featured: true,
     cover: "/work/expovino-portada.jpg",
   },
-  {
-    slug: "anuncios-estaticos-coterranea",
-    title: "Anuncios estáticos",
+    {
+    slug: "coterranea-black-week",
+    title: "Carrusel Black Week",
     client: "Coterránea",
-    year: 2026,
+    year: 2025,
     category: "grafica",
-    summary: "Sistema de piezas gráficas para la pauta en Meta.",
+    summary: "Piezas gráficas para la campaña de Black Week en Meta.",
     description:
-      "⚠️ Describir el sistema: qué se mantiene fijo entre piezas y qué cambia por proyecto.",
+      "Carrusel de cinco piezas para la campaña de Black Week de Coterránea, pensado para leerse en orden dentro del feed.\n\nEl formato obliga a resolver dos cosas a la vez: cada pieza tiene que funcionar sola, porque no todos deslizan, y el conjunto tiene que llevar a la acción para quienes sí lo hacen. La primera carga la oferta completa y las siguientes desarrollan el detalle.",
     scope: ["Diseño", "Adaptación por formato"],
-    credits: [{ member: "camila", role: "Diseño" }],
+    credits: [{ member: "Camila", role: "Diseño" }],
     format: "cuadrado",
-    images: [], // ⚠️ rutas: "/work/anuncios-estaticos-coterranea/01.jpg", …
+    cover: "/work/coterranea-blackweek/1.png",
+    images: [
+      "/work/coterranea-blackweek/1.png",
+      "/work/coterranea-blackweek/2.png",
+      "/work/coterranea-blackweek/3.png",
+      "/work/coterranea-blackweek/4.png",
+      "/work/coterranea-blackweek/5.png",
+    ],
     featured: true,
   },
     {
