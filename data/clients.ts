@@ -27,10 +27,8 @@ export const clients: Client[] = [
   { name: "DIP", logo: "/clients/dp-logo.png", scale: 1.6 },
   { name: "Langame", logo: "/clients/langame-logo.png" },
   { name: "Tao", logo: "/clients/tao-logo.png" },
-  { name: "Country Zapallar" },
+  { name: "Country Zapallar", logo: "/clients/cz-logowebp.webp", invert: true, scale: 1.2 },
+  { name: "Fundación Espacio Mejor", logo: "/clients/em-logo.png" },
   { name: "Vivero Küyen" },
-  { name: "MKT Afiliados" },
-  { name: "Palati" },
-  { name: "Terramore" },
-  { name: "Fundación Espacio Mejor" },
+  { name: "Terramore", logo: "/clients/terramoe-logo.png"  },
 ];
