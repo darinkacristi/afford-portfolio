@@ -89,7 +89,7 @@ export const projects: Project[] = [
       { member: "darinka", role: "Fotografía" },
     ],
     format: "vertical",
-    cover: "/work/fotos-terramore/terramore3.jpg",
+    cover: "/work/fotos-terramore/terramore1.jpg",
     images: [
       "/work/fotos-terramore/terramore1.jpg",
       "/work/fotos-terramore/terramore2.jpg",
