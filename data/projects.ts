@@ -42,7 +42,7 @@ export const projects: Project[] = [
     scope: ["Registro audiovisual", "Edición", "Producción con IA"],
     credits: [{ member: "baithiare", role: "Edición" }],
     format: "vertical",
-    cover: "/work/pampers-portada.jpg",
+    cover: "/work/pampers-portada.png",
     video: { kind: "youtube", id: "4RfesjVu5Vg" },
     featured: true,
   },
