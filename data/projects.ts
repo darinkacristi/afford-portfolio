@@ -74,18 +74,32 @@ export const projects: Project[] = [
     images: [], // ⚠️ "/work/fotografia-palati/01.jpg", …
     featured: true,
   },
-  {
+    {
     slug: "fotografia-terramore",
     title: "Fotografía gastronómica",
     client: "Terramore",
-    year: 2026,
+    year: 2024,
     category: "foto",
-    summary: "Fotografía de platos para carta y redes.",
-    description: "⚠️ Contar el montaje: luz, estilo de los encuadres, para qué se usaron las fotos.",
+    summary: "Sesión de platos para carta y redes.",
+    description:
+      "Registro fotográfico de la carta de Terramore, pensado para dos usos distintos: la carta, donde la foto tiene que describir el plato con precisión, y las redes, donde tiene que dar hambre.\n\nSe trabajó con luz natural y superficies de madera del propio local, manteniendo el mismo criterio de encuadre en toda la sesión para que las piezas se vean como un conjunto y no como fotos sueltas.",
     scope: ["Dirección de arte", "Fotografía", "Retoque"],
-    credits: [{ member: "baithiare", role: "Fotografía" }],
-    format: "cuadrado",
-    images: [], // ⚠️ "/work/fotografia-terramore/01.jpg", …
+    credits: [
+      { member: "baithiare", role: "Fotografía" },
+      { member: "darinka", role: "Fotografía" },
+    ],
+    format: "vertical",
+    cover: "/work/fotos-terramore/terramore3.jpg",
+    images: [
+      "/work/fotos-terramore/terramore1.jpg",
+      "/work/fotos-terramore/terramore2.jpg",
+      "/work/fotos-terramore/terramore3.jpg",
+      "/work/fotos-terramore/terramore4.jpg",
+      "/work/fotos-terramore/terramore5.jpg",
+      "/work/fotos-terramore/terramore6.jpg",
+      "/work/fotos-terramore/terramore7.jpg",
+      "/work/fotos-terramore/terramore8.jpg",
+    ],
     featured: true,
   },
         {
