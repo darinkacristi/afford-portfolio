@@ -142,7 +142,9 @@ export const projects: Project[] = [
   },
 ];
 
-export const featuredProjects = projects.filter((p) => p.featured);
+export const featuredProjects = projects
+  .filter((p) => p.featured)
+  .sort((a, b) => b.year - a.year);
 
 export function projectBySlug(slug: string) {
   return projects.find((p) => p.slug === slug);
