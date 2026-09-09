@@ -18,7 +18,7 @@ export default function TrabajoPage() {
           outline="trabajo."
           lead="Filtra por tipo de pieza. Cada proyecto abre su ficha con el material, el alcance y los créditos del equipo."
         />
-        <WorkGrid projects={projects} />
+      <WorkGrid projects={[...projects].sort((a, b) => b.year - a.year)} />
       </div>
     </section>
   );
