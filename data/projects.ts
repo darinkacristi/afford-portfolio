@@ -88,17 +88,19 @@ export const projects: Project[] = [
     images: [], // ⚠️ "/work/fotografia-terramore/01.jpg", …
     featured: true,
   },
-      {
+        {
     slug: "fundacion-espacio-mejor",
-    title: "Registro fotográfico",
+    title: "Taller de liderazgo adaptativo",
     client: "Fundación Espacio Mejor",
     year: 2026,
     category: "foto",
-    summary: "Registro fotográfico del trabajo de la fundación.",
-    description: "Contar qué se registró y para qué usa la fundación el material.",
+    summary:
+      "Registro fotográfico de una jornada de formación con estudiantes de Valparaíso.",
+    description:
+      "Fundación Espacio Mejor nos convocó a documentar su taller de liderazgo adaptativo, una jornada de trabajo con estudiantes de distintos colegios de Valparaíso.\n\nEl encargo pedía algo más que una cobertura: había que capturar la dinámica del taller sin interrumpirla. Trabajamos en registro documental, sin dirigir a los participantes ni montar situaciones, buscando los momentos en que las ideas efectivamente circulaban entre ellos.\n\nEl material quedó disponible para la fundación como banco de imágenes para sus reportes, redes y presentaciones a futuros aliados.",
     scope: ["Fotografía", "Retoque"],
     credits: [{ member: "baithiare", role: "Fotografía" }],
-    format: "vertical",
+    format: "horizontal",
     cover: "/work/fotosem-taller/taller1.jpeg",
     images: [
       "/work/fotosem-taller/taller1.jpeg",
