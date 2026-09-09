@@ -38,7 +38,7 @@ export default function WorkGrid({ projects }: { projects: Project[] }) {
         })}
       </div>
 
-      <div className="grid gap-3.5 [grid-template-columns:repeat(auto-fill,minmax(250px,1fr))]">
+      <div className="grid gap-5 [grid-template-columns:repeat(auto-fill,minmax(260px,1fr))]">
         <AnimatePresence mode="popLayout">
           {visibles.map((p) => (
             <motion.div

@@ -5,11 +5,13 @@ import { useRef } from "react";
 import { Iso } from "./BrandMark";
 import { categoryLabels, type Project } from "@/lib/types";
 
-const ratio: Record<Project["format"], string> = {
-  vertical: "9 / 16",
-  cuadrado: "4 / 5",
-  horizontal: "16 / 10",
-};
+/**
+ * Todas las tarjetas comparten la misma proporción (4:5) para que la grilla
+ * quede pareja, sin importar si la pieza es vertical, cuadrada u horizontal.
+ * El `format` real del proyecto sigue mandando en la ficha, que es donde
+ * importa que un reel se vea 9:16 y un sitio web 16:9.
+ */
+const RATIO_TARJETA = "4 / 5";
 
 export default function ProjectCard({ project }: { project: Project }) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -34,7 +36,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div
         className="relative grid place-items-center overflow-hidden"
         style={{
-          aspectRatio: ratio[project.format],
+          aspectRatio: RATIO_TARJETA,
           background: project.cover
             ? `center/cover no-repeat url(${project.cover})`
             : "linear-gradient(150deg,#1A2B22,#101914)",
