@@ -27,6 +27,7 @@ export const projects: Project[] = [
     video: { kind: "youtube", id: "XP089SSZCP0" },
     liveUrl: "https://www.instagram.com/p/Dcy9X6SuWZn/",
     featured: true,
+    cover: "/work/hq10-portada.jpg",
   },
   {
     slug: "expovino-2026-invierno",
