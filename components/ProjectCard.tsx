@@ -54,6 +54,13 @@ export default function ProjectCard({ project }: { project: Project }) {
           />
         )}
 
+        {/*
+          Velo oscuro sobre la portada: iguala paletas muy distintas entre sí y
+          hace que la grilla se lea como un conjunto. Al pasar el cursor se
+          desvanece y aparece el color real de la pieza.
+        */}
+        <span className="pointer-events-none absolute inset-0 bg-tinta/60 transition-opacity duration-500 group-hover:opacity-0" />
+
         {!project.cover && !project.preview && (
           <>
             <Iso width="32%" className="text-brote/25" />
@@ -63,7 +70,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           </>
         )}
 
-        <span className="absolute left-3 top-3 rounded-full bg-tinta/75 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-brote backdrop-blur">
+        <span className="absolute left-3 top-3 z-10 rounded-full bg-tinta/75 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-brote backdrop-blur">
           {categoryLabels[project.category]}
         </span>
       </div>
