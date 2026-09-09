@@ -29,6 +29,23 @@ export const projects: Project[] = [
     featured: true,
     cover: "/work/hq10-portada.jpg",
   },
+    {
+    slug: "pampers-proteccion-insuperable",
+    title: "Protección Insuperable",
+    client: "Pampers",
+    year: 2026,
+    category: "spot",
+    summary:
+      "Video resumen de la activación de Pampers en Cruz Verde, con producción asistida por IA.",
+    description:
+      "Pampers llevó su campaña Protección Insuperable al punto de venta y nos encargó convertir esa activación en una pieza publicable.\n\nEl trabajo partió con el registro audiovisual en terreno y siguió con la edición del resumen. Para la entrega final incorporamos herramientas de IA en la producción.",
+    scope: ["Registro audiovisual", "Edición", "Producción con IA"],
+    credits: [{ member: "baithiare", role: "Edición" }],
+    format: "vertical",
+    cover: "/work/pampers-portada.jpg",
+    video: { kind: "youtube", id: "4RfesjVu5Vg" },
+    featured: true,
+  },
   {
     slug: "expovino-2026-invierno",
     title: "Expovino",
