@@ -29,6 +29,5 @@ export const clients: Client[] = [
   { name: "Tao", logo: "/clients/tao-logo.png" },
   { name: "Country Zapallar", logo: "/clients/cz-logowebp.webp", invert: true, scale: 1.2 },
   { name: "Fundación Espacio Mejor", logo: "/clients/em-logo.png" },
-  { name: "Vivero Küyen" },
   { name: "Terramore", logo: "/clients/terramore-logo.png"  },
 ];
