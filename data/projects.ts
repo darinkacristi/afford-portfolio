@@ -42,7 +42,7 @@ export const projects: Project[] = [
     credits: [{ member: "baithiare", role: "Grabación y edición" }],
     format: "vertical",
     video: { kind: "youtube", id: "ZceEWuZDP9U" },
-    featured: true,
+    featured: false,
     cover: "/work/expovino-portada.jpg",
   },
     {
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     slug: "fundacion-espacio-mejor",
     title: "Taller de liderazgo adaptativo",
     client: "Fundación Espacio Mejor",
-    year: 2026,
+    year: 2025,
     category: "foto",
     summary:
       "Registro fotográfico de una jornada de formación con estudiantes de Valparaíso.",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
       "/work/fotosem-taller/taller5.jpeg",
       "/work/fotosem-taller/taller6.jpeg",
     ],
-    featured: true,
+    featured: false,
   },
     {
     slug: "langame-academy",
