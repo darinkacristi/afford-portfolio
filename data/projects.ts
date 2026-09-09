@@ -12,21 +12,20 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
-    slug: "videos-cruz-verde",
-    title: "Videos para Cruz Verde", // ⚠️ título real de la campaña
-    client: "FEMSA Salud",
+    slug: "activacion-hq10-cruz-verde",
+    title: "Activación HQ10",
+    client: "Cruz Verde",
     year: 2026,
     category: "spot",
-    summary: "Piezas en video producidas para las marcas de Cruz Verde.",
+    summary:
+      "Video resumen de la activación de HQ10 en Cruz Verde, con producción asistida por IA.",
     description:
-      "⚠️ Contar aquí de qué se trató: qué marcas, qué se grabó y dónde se pautó.\n\nSepara los párrafos con una línea en blanco, como está acá.",
-    scope: ["Producción", "Grabación", "Edición"],
-    credits: [
-      { member: "baithiare", role: "Producción" },
-      { member: "darinka", role: "Edición" },
-    ],
+      "Cruz Verde nos encargó documentar la activación de HQ10 y convertirla en una pieza publicable para sus redes.\n\nEl trabajo partió con el registro audiovisual en terreno y siguió con la edición del resumen. Para la entrega final incorporamos herramientas de IA en la producción, lo que permitió resolver en menos tiempo lo que habría exigido una jornada adicional de rodaje.\n\nLa pieza se publicó en las redes sociales oficiales de Cruz Verde.",
+    scope: ["Registro audiovisual", "Edición", "Producción con IA"],
+    credits: [{ member: "baithiare", role: "Edición" }],
     format: "vertical",
-    // video: { kind: "youtube", id: "" },
+    video: { kind: "youtube", id: "XP089SSZCP0" },
+    liveUrl: "https://www.instagram.com/p/Dcy9X6SuWZn/",
     featured: true,
   },
   {
