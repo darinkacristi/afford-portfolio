@@ -112,19 +112,25 @@ export const projects: Project[] = [
     ],
     featured: true,
   },
-  {
-    slug: "sitio-web-cliente", // ⚠️ cambiar por el slug real
-    title: "⚠️ Nombre del sitio",
-    client: "⚠️ Cliente",
+    {
+    slug: "langame-academy",
+    title: "Langame Academy",
+    client: "Langame",
     year: 2026,
     category: "web",
-    summary: "⚠️ Una línea sobre qué resuelve el sitio.",
-    description: "⚠️ Contar el encargo: qué necesitaba el cliente y cómo se resolvió.",
-    scope: ["Diseño", "Desarrollo"],
-    credits: [{ member: "darinka", role: "Diseño y desarrollo" }],
-    format: "horizontal",
-    liveUrl: "https://", // ⚠️ dirección del sitio publicado
-    images: [], // capturas: "/work/sitio-web-cliente/01.jpg", …
+    summary:
+      "El sitio de una academia de inglés, montado para cargar rápido y para que Google lo entienda.",
+    description:
+      "Langame entregó el diseño y Afford lo llevó a WordPress: ocho páginas montadas con Elementor, fieles a la pieza original.\n\nSobre esa base se agregaron las dos capas que no se ven pero se miden. Rendimiento: 99/100 en escritorio y 92/100 en móvil. Buscadores: las ocho páginas pasaron de no tener descripción propia a tener título y meta escritos a mano con keyword asignada, de cero páginas con título principal declarado a seis, y de un solo encabezado de sección en todo el sitio a diecinueve.\n\nClases Online y Travel & Learn quedaron declaradas como cursos y no como artículos de blog, y las preguntas frecuentes en el formato que leen ChatGPT y Perplexity. Veintisiete imágenes recibieron descripción para lectores de pantalla. Sin cambiar una sola palabra del diseño: lo que cambió es cómo lo lee un buscador.",
+    scope: ["Desarrollo", "Optimización", "SEO"],
+    credits: [
+      { member: "javier", role: "Montaje, optimización y SEO" },
+      { member: "camila", role: "Adaptación del diseño" },
+    ],
+    format: "cuadrado",
+    cover: "/work/langame-web.png",
+    liveUrl: "https://langame.academy",
+    images: [],
     featured: true,
   },
 ];
